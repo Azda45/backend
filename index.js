@@ -11,4 +11,5 @@ app.use(FileUpload());
 app.use(express.static("public"));
 app.use(ProductRoute);
 
-app.listen(80, () => console.log('Server Up and Running...'));
+const PORT = 80; // atau port apa pun yang Anda inginkan
+app.listen(PORT, () => console.log(`Server Up and Running on port ${PORT}...`));
